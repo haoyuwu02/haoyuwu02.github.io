@@ -11,7 +11,7 @@ My research interests are on the theoretical and algorithmic foundations of a wi
 
 ## Publication
 
-- Haoyu Wu, Ao Tang, "[An Even Tighter Bound of Shapley-Folkman-Starr Theorem](./files/SF_Lemma.pdf)", (preprint)
+- Haoyu Wu, Ao Tang, "[An Even Tighter Bound of Shapley-Folkman-Starr Theorem](./files/SF_Lemma.pdf)", (submitted to Journal of Mathematical Economics, in revision now)
 
 <!-- ## Working Project
 
