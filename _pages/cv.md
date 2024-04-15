@@ -17,7 +17,7 @@ Education
 
 Publication
 =====
-Haoyu Wu, Ao Tang, "[Error Estimation via a Refined Shapley-Folkman Lemma](https://haoyuwu02.github.io/files/SF_Lemma.pdf)", (preprint)
+Haoyu Wu, Ao Tang, "[An Even Tighter Bound of Shapley-Folkman-Starr Theorem](https://haoyuwu02.github.io/files/SF_Lemma.pdf)", (preprint)
   
 Code
 =====

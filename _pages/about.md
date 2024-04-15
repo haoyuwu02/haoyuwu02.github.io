@@ -7,11 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-My research interests are on the theoretical and algorithmic foundations of a wide range problems with **computational mathematics** or **optimization** or **control** background. Previous, I have conducted projects related to convex, non-convex and combinatorial optimziation, signal prosessing. I am working on a project related to game theory, convex optimizaion, dynamic programming now.
+My research interests are on the theoretical and algorithmic foundations of a wide range problems with **computational mathematics**background. Previous, I have conducted projects related to convex, non-convex and combinatorial optimziation, inverse problems. I am working on a project related to game theory, convex optimizaion, dynamic programming now.
 
 ## Publication
 
-- Haoyu Wu, Ao Tang, "[Error Estimation via a Refined Shapley-Folkman Lemma](./files/SF_Lemma.pdf)", (preprint)
+- Haoyu Wu, Ao Tang, "[An Even Tighter Bound of Shapley-Folkman-Starr Theorem](./files/SF_Lemma.pdf)", (preprint)
 
 <!-- ## Working Project
 
