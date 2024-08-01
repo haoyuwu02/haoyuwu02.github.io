@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-My research interests are on the theoretical and algorithmic foundations of a wide range problems with **computational mathematics** background. Previous, I have conducted projects related to convex, non-convex and combinatorial optimziation, inverse problems. I am working on a project related to game theory, convex optimizaion, dynamic programming now advised by Dr. [A. Kevin Tang](https://www.ece.cornell.edu/faculty-directory/kevin-tang).
+My research interests are on the theoretical and algorithmic foundations of a wide range problems with **computational mathematics** background. Previous, I have conducted projects related to convex, non-convex and combinatorial optimziation, inverse problems. I am working on a project related to game theory, convex optimizaion, dynamic programming now advised by [Dr. A. Kevin Tang](https://www.ece.cornell.edu/faculty-directory/kevin-tang).
 
 ## Publication
 
