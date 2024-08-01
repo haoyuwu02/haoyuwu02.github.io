@@ -1,5 +1,5 @@
 ---
-title: "Teaching experience 1"
+title: "Tokyo Trip"
 collection: blogs
 type: "Undergraduate course"
 permalink: /blogs/tokyo
