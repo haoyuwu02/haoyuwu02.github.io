@@ -8,7 +8,7 @@ Here is my current work starting from September 2023.
 
 It’s well-known that the existence of the equilibria is not guaranteed in high dimensions, and some previous results state conservative symmetric conditions. We compute the ideal position on the policy space with the minimized region that could beat this chosen position. Our conjecture is the ratio of the minimized measurement of the region to the measure of the whole policy space (or the convex hull of voters) decreases as the dimension increases.
 
-We are considering the model as a dynamic and differential game, incorporating the Hamilton-Jacobi-Bellman equation.
+We are considering the model as a dynamic and differential game, incorporating the Hamilton-Jacobi-Bellman equation, to study the behaviours of the candidates.
 
 I have some unfinished work and here is the [draft manuscript](https://haoyuwu02.github.io/files/Voting.pdf).
 

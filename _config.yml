@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Haoyu Wu"
+title                    : "Haoyu's website"
 title_separator          : "-"
 name                     : &name "Haoyu Wu"
 description              : &description "personal description"
@@ -81,8 +81,8 @@ analytics:
 # Site Author
 author:
   name             : "Haoyu Wu"
-  avatar           : "Profile_H.JPG"
-  bio              : "B.S. at HKUST, Incoming M.S. at UChicago"
+  avatar           : "portrait.png"
+  bio              : "B.S. at HKUST, 2024. Incoming M.S. at UChicago"
   email            : "hwubs@connect.ust.hk"
   bitbucket        :
   codepen          :
@@ -100,7 +100,7 @@ author:
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
+  steam            : 
   tumblr           :
   vine             :
   weibo            :
