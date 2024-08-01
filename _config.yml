@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Haoyu's website"
+title                    : "Haoyu Wu"
 title_separator          : "-"
-name                     : &name "Haoyu Wu"
+name                     : &name "Haoyu's website"
 description              : &description "personal description"
 url                      : "https://haoyuwu02.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -91,7 +91,7 @@ author:
   facebook         :
   foursquare       :
   github           : 
-  google_plus      :
+  google_plus      : "https://scholar.google.com/citations?user=M3dPmy4AAAAJ&hl=en"
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
