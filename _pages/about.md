@@ -7,11 +7,17 @@ redirect_from:
   - /about.html
 ---
 
-My research interests are on the theoretical and algorithmic foundations of a wide range problems with **computational mathematics**background. Previous, I have conducted projects related to convex, non-convex and combinatorial optimziation, inverse problems. I am working on a project related to game theory, convex optimizaion, dynamic programming now.
+My research interests are on the theoretical and algorithmic foundations of a wide range problems with **computational mathematics** background. Previous, I have conducted projects related to convex, non-convex and combinatorial optimziation, inverse problems. I am working on a project related to game theory, convex optimizaion, dynamic programming now advised by Dr. [A. Kevin Tang](https://www.ece.cornell.edu/faculty-directory/kevin-tang).
 
 ## Publication
 
-- Haoyu Wu, Ao Tang, "[An Even Tighter Bound of Shapley-Folkman-Starr Theorem](./files/SF_Lemma.pdf)", (submitted to Journal of Mathematical Economics, in revision now)
+Haoyu Wu, Ao Tang, "[An Even Tighter Bound for the Shapley-Folkman-Starr Theorem](https://haoyuwu02.github.io/files/SFS.pdf)", Journal of Mathematical Economics, Volume 114, 2024. "[URL](https://doi.org/10.1016/j.jmateco.2024.103028)".
+
+## Working Paper
+
+I'm working on a paper about voting problem incorprating dynamic game. The working manuscript is "[here](https://haoyuwu02.github.io/files/Voting.pdf)".
+
+
 
 <!-- ## Working Project
 
