@@ -7,7 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-My research interests are mathematical and theoretical interpretation of technology or economy, which offers qualitative improvements in many industrial problems and extensively promotes social efficiency. I am a Yr-1 Master student in computational and applied math at UChicago. Previously, I earned my bachelor degree in mathematics from Hong Kong University of Science and Technology at 2024. 
+I am a Yr-1 Master student in computational and applied math at UChicago. Previously, I earned my bachelor degree in mathematics from Hong Kong University of Science and Technology at 2024. 
+
+My research interests are mathematical and theoretical interpretation of technology or economy, which offers qualitative improvements in many industrial problems and extensively promotes social efficiency. 
 
 ## Research
 
@@ -24,7 +26,9 @@ I'm working on a paper about voting problem incorprating dynamic game. The worki
 ## Graduate Coursework
 
 **HKUST**: Applied Analysis, Advanced Probability;
+
 **Columbia**: Convex Optimization, Combinatorial Optimization;
+
 **UChicago**: Brownian Motion and Stochastic Calculus, Probability and Statistic, Matrix Computation.
 
 ## Coding
