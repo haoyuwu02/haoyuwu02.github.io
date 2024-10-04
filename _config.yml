@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Haoyu Wu"
   avatar           : "portrait.png"
-  bio              : "B.S. at HKUST, 2024. Incoming M.S. at UChicago"
-  email            : "hwubs@connect.ust.hk"
+  bio              : "M.S. at UChicago"
+  email            : "haoyuwu@uchicago.edu"
   bitbucket        :
   codepen          :
   dribbble         :
@@ -91,7 +91,7 @@ author:
   facebook         :
   foursquare       :
   github           : 
-  google_plus      : "https://scholar.google.com/citations?user=M3dPmy4AAAAJ&hl=en"
+  google_plus      : #"https://scholar.google.com/citations?user=M3dPmy4AAAAJ&hl=en"
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
