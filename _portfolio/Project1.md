@@ -1,5 +1,5 @@
 ---
-title: "(Working) Why do the Candidate move further away? They are not crazy!"
+title: "(Working) Why do the Candidates move further away? They are not crazy!"
 excerpt: "Keywords: Game Theory, Dynamic Programming, Convex Opt., Optimal Control; Advised by Dr. Kevin Tang. <br/><img src='/images/Voting1.png'>"
 collection: portfolio
 ---
