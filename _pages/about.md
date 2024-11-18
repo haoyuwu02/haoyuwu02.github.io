@@ -21,7 +21,7 @@ Haoyu Wu, Ao Tang, "[An Even Tighter Bound for the Shapley-Folkman-Starr Theorem
 
 ## Working Paper
 
-I'm working on a paper about voting problem incorprating dynamic game. The working manuscript is [here](https://haoyuwu02.github.io/files/dynamicvoting.pdf).
+I'm working on a paper about voting problem incorprating dynamic game. See detail in the "Projects" pages.
 
 ## Graduate Coursework
 
