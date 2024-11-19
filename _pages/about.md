@@ -14,15 +14,19 @@ I am a Yr-1 Master student in computational and applied math at UChicago. Previo
 
 ## Research
 
-I am working on a paper related to game theory, convex optimizaion, dynamic programming and control theory advised by [Dr. A. Kevin Tang](https://www.ece.cornell.edu/faculty-directory/kevin-tang). Previously, I have conducted projects related to combinatorial assignment problem, optimziation and inverse problems. Go to the "projects" page to find details!
+For all the detail about my research projects, please go to the "projects" page to find details and my final report/presentation slides.
+
+- I am working on a paper related to game theory, convex optimizaion, dynamic programming and control theory advised by [Dr. A. Kevin Tang](https://www.ece.cornell.edu/faculty-directory/kevin-tang). 
+
+- I did a research projects about Shapley-Folkman Lemma in advised by [Dr. A. Kevin Tang](https://www.ece.cornell.edu/faculty-directory/kevin-tang) at Summer, 2023.
+
+- Singal Recovery for Simultaneous-strucutred Signal, advised by [Dr. Jian-feng Cai](https://facultyprofiles.hkust.edu.hk/profiles.php?profile=jianfeng-cai-jfcai) at Fall, 2022.
+
+- Computational Optimal Transport, advised by [Dr. Jian-feng Cai](https://facultyprofiles.hkust.edu.hk/profiles.php?profile=jianfeng-cai-jfcai) at Spring, 2022.
 
 ## Publication
 
 Haoyu Wu, Ao Tang, "[An Even Tighter Bound for the Shapley-Folkman-Starr Theorem](https://haoyuwu02.github.io/files/SFS.pdf)", Journal of Mathematical Economics, V114, 2024. [doi.org/10.1016/j.jmateco.2024.103028](https://doi.org/10.1016/j.jmateco.2024.103028).
-
-## Working Paper
-
-I'm working on a paper about voting problem incorprating dynamic game. See detail in the "Projects" pages.
 
 ## Graduate Coursework
 
