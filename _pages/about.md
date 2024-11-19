@@ -7,13 +7,14 @@ redirect_from:
   - /about.html
 ---
 
-I am a Yr-1 Master student in computational and applied math at UChicago. Previously, I earned my bachelor degree in mathematics from Hong Kong University of Science and Technology at 2024. 
+My research interests broadly focus on the mathematical and theoretical interpretation of technology and economics, utilizing methodologies such as optimization, stochastic and dynamic methods, game theory, mean-field approach, and so on to address real-world operational problems. 
+In particular, I am interested in the interplay of the mathematical structures (like convexity, submodularity, sparsity, and low-rank property) in single or network; behavioral analysis (such as cooperation and competition) raised in the dynamic game and control theory; Probability approach as a foundational method.
 
-My research interests are mathematical and theoretical interpretation of technology or economy, which offers qualitative improvements in many industrial problems and extensively promotes social efficiency. 
+I am a Yr-1 Master student in computational and applied math at UChicago. Previously, I earned my bachelor degree in pure mathematics from Hong Kong University of Science and Technology at 2024. I was an exchange student to Columbia University at the spring semester in my junior year.
 
 ## Research
 
-I am working on a paper related to game theory, convex optimizaion, dynamic programming advised by [Dr. A. Kevin Tang](https://www.ece.cornell.edu/faculty-directory/kevin-tang). Previously, I have conducted projects related to combinatorial assignment problem, optimziation and inverse problems. Go to the "projects" page to find details!
+I am working on a paper related to game theory, convex optimizaion, dynamic programming and control theory advised by [Dr. A. Kevin Tang](https://www.ece.cornell.edu/faculty-directory/kevin-tang). Previously, I have conducted projects related to combinatorial assignment problem, optimziation and inverse problems. Go to the "projects" page to find details!
 
 ## Publication
 
@@ -37,7 +38,7 @@ I implement the algorithms/regressions in my ML course and the simulation of Ham
 
 ## Teaching Assiant
 
-* I was a UG TA grading the homework of Honor Calculus I course in HKUST, 2023 fall;
+* I was a UG TA grader of Honor Calculus I course in HKUST, 2023 fall;
 * I was a TA in Math Support Center in HKUST, 2022 fall.
 
 ## Service and leadership
