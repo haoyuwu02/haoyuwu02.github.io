@@ -4,7 +4,7 @@ excerpt: "Keywords: Signal Recovery, Convex Opt., Tansor Structure; Advaised by 
 collection: portfolio
 ---
 
-Here is my reasearch project in the fall 2022 in HKUST and I studied some topics related to signal recovery and tensors rank.
+Here is my undergraduate reasearch project #2 in the fall 2022 in HKUST and I studied some topics related to signal recovery and tensors rank.
 
 The project involved investigating the recovery of signals from observed data imaged by a linear operator, often represented by a random matrix. We explored recovery methods for simultaneous structured signals, such as signals exhibiting both sparsity and low-rank properties, as well as low-rank tensors (low-rank matrices in different tuck directions unfold, also known as tucker rank). 
 

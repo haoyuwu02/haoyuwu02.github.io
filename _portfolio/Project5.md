@@ -4,7 +4,7 @@ excerpt: "Keywords: Convex Opt., Entropy; Advaised by Dr. Jianfeng Cai <br/><img
 collection: portfolio
 ---
 
-Here is my work in spring of 2022, and I studied some modern computational methods (like the Sinkhorn algorithm and its modification) and entropy regularization in the optimal transport problem.
+Here is my undergraduate research project #1 in spring of 2022, and I studied some modern computational methods (like the Sinkhorn algorithm and its modification) and entropy regularization in the optimal transport problem.
 
 We also investigated the Sinkhorn algorithm and its convergence rate and modifications, such as the Greekhorn algorithm. Additionally, I applied Python Optimal Transport to examine concrete examples. The findings and insights from this project were summarized in my final report, which I presented to a group of professors and students at the IRE fellows gathering in June 2022.
 

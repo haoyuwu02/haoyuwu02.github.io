@@ -8,21 +8,21 @@ redirect_from:
 ---
 
 My research interests broadly focus on the mathematical and theoretical interpretation of technology and economics, utilizing methodologies such as optimization, stochastic and dynamic methods, game theory, mean-field approach, and so on to address real-world operational problems. 
-In particular, I am interested in the interplay of the mathematical structures (like convexity, submodularity, sparsity, and low-rank property) in single or network; behavioral analysis (such as cooperation and competition) raised in the dynamic game and control theory; Probability approach as a foundational method.
+In particular, I am interested in the interplay of the mathematical structures (like convexity, submodularity, sparsity, and low-rank property); behavioral analysis (such as cooperation and competition) raised in the dynamic game and control theory; Probability approach as a foundational method, like stochastic modelling method.
 
-I am a Yr-1 Master student in computational and applied math at UChicago. Previously, I earned my bachelor degree in pure mathematics from Hong Kong University of Science and Technology at 2024. I was an exchange student to Columbia University at the spring semester in my junior year.
+I am a Yr-1 Master's student in computational and applied math at UChicago. Previously, I earned my bachelor degree in pure mathematics from Hong Kong University of Science and Technology. I was an exchange student to Columbia University at the spring semester in my junior year.
 
 ## Research
 
 For all the detail about my research projects, please go to the "projects" page to find details and my final report/presentation slides.
 
-- I am working on a paper related to game theory, convex optimizaion, dynamic programming and control theory advised by [Dr. A. Kevin Tang](https://www.ece.cornell.edu/faculty-directory/kevin-tang). 
+- I am working on a paper related to game theory, dynamic programming and convex optimizaion advised by [Dr. A. Kevin Tang](https://www.ece.cornell.edu/faculty-directory/kevin-tang). 
 
 - I did a research projects about Shapley-Folkman Lemma in advised by [Dr. A. Kevin Tang](https://www.ece.cornell.edu/faculty-directory/kevin-tang) at Summer, 2023.
 
-- Singal Recovery for Simultaneous-strucutred Signal, advised by [Dr. Jian-feng Cai](https://facultyprofiles.hkust.edu.hk/profiles.php?profile=jianfeng-cai-jfcai) at Fall, 2022.
+- My undergraduate research project #2: Singal Recovery for Simultaneous-strucutred Signal, advised by [Dr. Jian-feng Cai](https://facultyprofiles.hkust.edu.hk/profiles.php?profile=jianfeng-cai-jfcai) at Fall, 2022.
 
-- Computational Optimal Transport, advised by [Dr. Jian-feng Cai](https://facultyprofiles.hkust.edu.hk/profiles.php?profile=jianfeng-cai-jfcai) at Spring, 2022.
+- My undergraduate research project #1: Computational Optimal Transport, advised by [Dr. Jian-feng Cai](https://facultyprofiles.hkust.edu.hk/profiles.php?profile=jianfeng-cai-jfcai) at Spring, 2022.
 
 ## Publication
 
@@ -34,7 +34,7 @@ Haoyu Wu, Ao Tang, "[An Even Tighter Bound for the Shapley-Folkman-Starr Theorem
 
 **Columbia**: Convex Optimization, Combinatorial Optimization;
 
-**UChicago**: Brownian Motion and Stochastic Calculus, Probability and Statistic, Matrix Computation.
+**UChicago**: Brownian Motion and Stochastic Calculus, Probability and Statistic (Causal inference), Matrix Computation, stochastic optimization, ...
 
 ## Coding
 
@@ -52,6 +52,10 @@ I implement the algorithms/regressions in my ML course and the simulation of Ham
 * Head Student Ambassador, UG Recruitment and Admission Office, HKUST, since 2020;
 * Student Representative of Math Student Liaison Subcommittee Meeting for 3 semester.
 
+## Hobbies
+
+* I enjoy hiking, reading and travelling in my spare time.
+* I am a pre-professional Teamfight Tactics player.
 <!-- ## Working Project
 
 - Ideal Position of the Voting Problem in Game Theory. "[Progress_Report](./files/Voting_Working.pdf)", "[Presentation_Beamer](./files/Progress_Voting_Beamer.pdf)".
