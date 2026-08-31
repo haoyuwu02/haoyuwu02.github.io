@@ -5,5 +5,4 @@ compatibility_date = "2026-08-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "visitor-map"
-# Replace with the database_id printed by:  npx wrangler d1 create visitor-map
-database_id = "REPLACE_ME"
+database_id = "6242d770-b9a6-4ac0-9fed-daff19a2eb63"
