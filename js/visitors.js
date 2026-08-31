@@ -2,7 +2,7 @@
 //
 // ── CONFIG ──────────────────────────────────────────────────────────────
 // After deploying the worker, set your workers.dev URL here (no trailing /):
-const VISITOR_API = "";
+const VISITOR_API = "https://visitor-map.visitor-map-haoyuwu02.workers.dev";
 // ────────────────────────────────────────────────────────────────────────
 //
 // Behavior:
