@@ -112,10 +112,17 @@
 
       </section>
 
-      <!-- Visitor map. Hidden until js/visitors.js has data (needs VISITOR_API
-           set — see cloudflare-worker/README.md). Preview locally with ?demo=1. -->
-      <section class="subsection visitors" id="visitors" hidden>
-        <h2>Visitors</h2>
+    </div>
+  </main>
+
+  <footer class="colophon">
+    <div class="wrap footer-grid">
+      <p class="contact">
+        Haoyu Wu · <a href="mailto:haoyuwu0@chicagobooth.edu">haoyuwu0@chicagobooth.edu</a>
+      </p>
+      <!-- Small visitor map (data via js/visitors.js + the Cloudflare worker).
+           Stays hidden until data loads. Preview locally with ?demo=1. -->
+      <div class="visitors" id="visitors" hidden>
         <div class="visitor-toggle" role="group" aria-label="Time range">
           <button type="button" data-window="all" aria-pressed="true">All time</button>
           <span class="divider">·</span>
@@ -123,16 +130,7 @@
         </div>
         <div id="visitor-map" class="visitor-map"></div>
         <p class="label" id="visitor-stats"></p>
-      </section>
-
-    </div>
-  </main>
-
-  <footer class="colophon">
-    <div class="wrap">
-      <p class="contact">
-        Haoyu Wu · <a href="mailto:haoyuwu0@chicagobooth.edu">haoyuwu0@chicagobooth.edu</a>
-      </p>
+      </div>
     </div>
   </footer>
 

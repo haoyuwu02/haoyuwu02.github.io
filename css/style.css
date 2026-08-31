@@ -426,15 +426,23 @@ nav.toc .divider { color: var(--border); }
   font-size: 0.95rem;
 }
 
-/* ---- visitor map (bottom of the home page) ---- */
+/* ---- visitor map (small block in the home-page footer) ---- */
 
-.visitors { margin-top: 2.6rem; }
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem 3rem;
+  flex-wrap: wrap;
+}
+
+.visitors { width: 300px; max-width: 100%; }
 
 .visitor-toggle {
   font-family: var(--mono);
-  font-size: 0.78rem;
+  font-size: 0.7rem;
   letter-spacing: 0.02em;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.35rem;
 }
 .visitor-toggle button {
   background: none;
@@ -468,7 +476,7 @@ nav.toc .divider { color: var(--border); }
   stroke-opacity: 0.9;
 }
 
-#visitor-stats { margin-top: 0.6rem; }
+#visitor-stats { margin: 0.35rem 0 0; font-size: 0.65rem; }
 
 /* ---- footer ---- */
 

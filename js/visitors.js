@@ -111,7 +111,7 @@ const VISITOR_API = "https://visitor-map.visitor-map-haoyuwu02.workers.dev";
       var c = document.createElementNS(svgNS, "circle");
       c.setAttribute("cx", xy[0].toFixed(1));
       c.setAttribute("cy", xy[1].toFixed(1));
-      c.setAttribute("r", Math.min(2 + 1.2 * Math.sqrt(d.n || 1), 8).toFixed(1));
+      c.setAttribute("r", Math.min(3.4 + 1.3 * Math.sqrt(d.n || 1), 10).toFixed(1));
       c.setAttribute("class", "vdot");
       var t = document.createElementNS(svgNS, "title");
       var place = [d.city, d.country].filter(Boolean).join(", ");
