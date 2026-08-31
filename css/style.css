@@ -426,6 +426,50 @@ nav.toc .divider { color: var(--border); }
   font-size: 0.95rem;
 }
 
+/* ---- visitor map (bottom of the home page) ---- */
+
+.visitors { margin-top: 2.6rem; }
+
+.visitor-toggle {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.8rem;
+}
+.visitor-toggle button {
+  background: none;
+  border: none;
+  padding: 2px 1px;
+  cursor: pointer;
+  font: inherit;
+  color: var(--muted);
+}
+.visitor-toggle button:hover { color: var(--accent); }
+.visitor-toggle button[aria-pressed="true"] {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 4px;
+}
+.visitor-toggle .divider { color: var(--border); }
+
+.visitor-map svg { display: block; width: 100%; height: auto; }
+.visitor-map .land {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+.visitor-map .vdot {
+  fill: var(--accent);
+  fill-opacity: 0.7;
+  stroke: var(--accent);
+  stroke-width: 0.6;
+  stroke-opacity: 0.9;
+}
+
+#visitor-stats { margin-top: 0.6rem; }
+
 /* ---- footer ---- */
 
 footer.colophon {

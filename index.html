@@ -112,6 +112,19 @@
 
       </section>
 
+      <!-- Visitor map. Hidden until js/visitors.js has data (needs VISITOR_API
+           set — see cloudflare-worker/README.md). Preview locally with ?demo=1. -->
+      <section class="subsection visitors" id="visitors" hidden>
+        <h2>Visitors</h2>
+        <div class="visitor-toggle" role="group" aria-label="Time range">
+          <button type="button" data-window="all" aria-pressed="true">All time</button>
+          <span class="divider">·</span>
+          <button type="button" data-window="30d" aria-pressed="false">Last 30 days</button>
+        </div>
+        <div id="visitor-map" class="visitor-map"></div>
+        <p class="label" id="visitor-stats"></p>
+      </section>
+
     </div>
   </main>
 
@@ -124,5 +137,6 @@
   </footer>
 
   <script src="js/main.js" defer></script>
+  <script src="js/visitors.js" defer></script>
 </body>
 </html>

@@ -27,6 +27,13 @@ Edit a file, save, refresh the browser. That's the whole workflow.
   controls the overall text size.
 - `js/main.js` — progressive enhancement only (dark/light toggle, on-scroll
   masthead blur). The site is fully correct with this file blocked or deleted.
+- `js/visitors.js` — visitor counter + dot world-map at the bottom of the home
+  page, with a "Last 30 days / All time" toggle. Backed by a small Cloudflare
+  Worker (see `cloudflare-worker/README.md` for the one-time setup). Until
+  `VISITOR_API` at the top of the file is set, the section stays hidden and
+  nothing is recorded. Preview the map locally with `index.html?demo=1`.
+- `cloudflare-worker/` — the recording backend (worker + DB schema + setup
+  guide). Not part of the published site.
 - `files/` — CV and paper/slide PDFs.
 - `images/` — portrait and favicon.
 
