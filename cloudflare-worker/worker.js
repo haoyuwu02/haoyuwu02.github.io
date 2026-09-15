@@ -82,28 +82,50 @@ async function recordHit(request, env) {
 }
 
 async function getDots(request, env) {
-  const url = new URL(request.url);
-  const windowed = url.searchParams.get("window") !== "all";
-  const where = windowed ? "WHERE day >= date('now', '-30 days')" : "";
+  // Both windows are computed from one snapshot so the numbers can never
+  // contradict each other (previously each window was a separate, separately
+  // cached request, so a fresh 30-day count could exceed a stale all-time one).
+  const w30 = "WHERE day >= date('now', '-30 days')";
+  const dotsQ = (where) => env.DB.prepare(
+    `SELECT lat, lon, SUM(n) AS n, MAX(city) AS city, MAX(country) AS country
+     FROM visits ${where} GROUP BY lat, lon`
+  ).all();
+  const totalsQ = (where) => env.DB.prepare(
+    `SELECT COALESCE(SUM(n), 0) AS total,
+            (SELECT COUNT(DISTINCT country) FROM visits ${where}) AS countries
+     FROM days ${where}`
+  ).first();
 
-  const [dots, totals, since] = await Promise.all([
-    env.DB.prepare(
-      `SELECT lat, lon, SUM(n) AS n, MAX(city) AS city, MAX(country) AS country
-       FROM visits ${where} GROUP BY lat, lon`
-    ).all(),
-    env.DB.prepare(
-      `SELECT COALESCE(SUM(n), 0) AS total,
-              (SELECT COUNT(DISTINCT country) FROM visits ${where}) AS countries
-       FROM days ${where}`
-    ).first(),
+  const [dotsAll, dots30, totAll, tot30, since] = await Promise.all([
+    dotsQ(""), dotsQ(w30), totalsQ(""), totalsQ(w30),
     env.DB.prepare("SELECT MIN(day) AS since FROM days").first(),
   ]);
 
+  // A hit landing between the two totals queries could still skew them by one;
+  // all-time is a superset of the last 30 days, so reconcile toward the max.
+  const allTotal = Math.max(totAll.total, tot30.total);
+  const all = {
+    total: allTotal,
+    countries: Math.max(totAll.countries, tot30.countries),
+    dots: dotsAll.results,
+  };
+  const last30 = {
+    total: Math.min(tot30.total, allTotal),
+    countries: tot30.countries,
+    dots: dots30.results,
+  };
+
+  // Legacy top-level fields mirror the requested window so cached copies of
+  // the old js/visitors.js keep working until browsers pick up the new one.
+  const url = new URL(request.url);
+  const legacy = url.searchParams.get("window") === "all" ? all : last30;
   return {
-    total: totals.total,
-    countries: totals.countries,
+    total: legacy.total,
+    countries: legacy.countries,
+    dots: legacy.dots,
     since: since.since,
-    dots: dots.results,
+    all,
+    last30,
   };
 }
 

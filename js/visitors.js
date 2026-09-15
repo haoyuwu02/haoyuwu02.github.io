@@ -63,18 +63,36 @@ const VISITOR_API = "https://visitor-map.visitor-map-haoyuwu02.workers.dev";
     ]
   };
 
-  var cache = {};
+  // Both windows come from a single request/snapshot so the two counts can
+  // never disagree (two separately timed+cached requests once let "last 30
+  // days" briefly exceed "all time").
+  var cache = null; // { since, all: {...}, last30: {...} }
   function load(windowKey) {
-    if (cache[windowKey]) return Promise.resolve(cache[windowKey]);
+    if (cache) return Promise.resolve(cache[windowKey === "30d" ? "last30" : "all"]);
+    var done = function (c) {
+      c.all.since = c.all.since || c.since; // "since Mon YYYY" label on the all-time view
+      cache = c;
+      return cache[windowKey === "30d" ? "last30" : "all"];
+    };
     if (demo && !VISITOR_API) {
-      var d = JSON.parse(JSON.stringify(SAMPLE));
-      if (windowKey === "30d") { d.total = 87; d.countries = 12; d.dots = d.dots.slice(0, 8); }
-      cache[windowKey] = d;
-      return Promise.resolve(d);
+      var d30 = JSON.parse(JSON.stringify(SAMPLE));
+      d30.total = 87; d30.countries = 12; d30.dots = d30.dots.slice(0, 8);
+      return Promise.resolve(done({ since: SAMPLE.since, all: SAMPLE, last30: d30 }));
     }
-    return fetch(VISITOR_API + "/dots?window=" + (windowKey === "30d" ? "30d" : "all"))
+    return fetch(VISITOR_API + "/dots")
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then(function (d) { cache[windowKey] = d; return d; });
+      .then(function (d) {
+        if (d.all && d.last30) return done({ since: d.since, all: d.all, last30: d.last30 });
+        // Old worker (single-window response): fetch the other window and
+        // reconcile — all time is a superset, so it can never be smaller.
+        return fetch(VISITOR_API + "/dots?window=all")
+          .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+          .then(function (dAll) {
+            dAll.total = Math.max(dAll.total || 0, d.total || 0);
+            dAll.countries = Math.max(dAll.countries || 0, d.countries || 0);
+            return done({ since: dAll.since, all: dAll, last30: d });
+          });
+      });
   }
 
   var svgNS = "http://www.w3.org/2000/svg";
