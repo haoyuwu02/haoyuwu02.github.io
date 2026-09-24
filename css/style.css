@@ -412,6 +412,32 @@ nav.toc .divider { color: var(--border); }
 .cv-download::before { content: "[ "; color: var(--muted); }
 .cv-download::after { content: " ]"; color: var(--muted); }
 
+/* ---- talks & posters, listed under a research entry's abstract ---- */
+
+.entry__talks { margin-top: 1.4rem; }
+.entry__talks .talk-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem;
+}
+.entry__talks .talk-list:last-child { margin-bottom: 0; }
+.entry__talks .talk-list li {
+  border-left: 2px solid var(--border);
+  padding: 0.1rem 0 0.1rem 0.9rem;
+  margin-bottom: 0.9rem;
+}
+.entry__talks .talk__event { font-size: 0.92rem; font-style: italic; }
+.entry__talks .bib-tag { font-style: normal; }
+.entry__talks .talk__meta {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0.15em 0 0.45em;
+}
+.entry__talks .talk-list li > :last-child { margin-bottom: 0; }
+
 /* ---- notes page ---- */
 
 .notes-list { padding-left: 1.2em; }
@@ -494,6 +520,19 @@ footer.colophon .contact a { color: var(--muted); }
 
 .hide-js { display: none; }
 .js .hide-js { display: inline-flex; }
+
+/* phones: the nav drops below the name, so let the masthead grow to fit
+   instead of spilling over the page */
+@media (max-width: 600px) {
+  .masthead__inner {
+    height: auto;
+    min-height: var(--nav-h);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    row-gap: 6px;
+  }
+  nav.toc { gap: 0.3rem; font-size: 0.7rem; }
+}
 
 @media (max-width: 480px) {
   .titlepage h1 { font-size: 1.9rem; }

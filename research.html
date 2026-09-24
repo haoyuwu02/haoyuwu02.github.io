@@ -70,29 +70,24 @@
           it automatically drops below the left column instead of
           sitting beside it, so you don't need to do anything for mobile.
 
+          TALKS & POSTERS about a paper go under its abstract, in the
+          <div class="entry__talks"> block (see the Optimal Transport
+          entry). One <li> ... </li> per talk:
+            talk__event   conference name (+ session). The optional
+                           <span class="bib-tag">Upcoming</span> badge is
+                           for talks that haven't happened yet — delete it
+                           afterwards.
+            talk__meta    place · month year
+          Optional, inside an <li> after the talk__meta line:
+            a description   <p>What the talk covered ...</p>
+            a slides link   <p class="entry__links"><a href="files/SLIDES.pdf">Slides</a></p>
+          Copy the whole entry__talks block into another entry to give it
+          talks; delete the "Posters" label + its <ul> if there are none.
+
           To REMOVE an entry, delete its whole <article>...</article>
           block. To reorder entries, cut and paste whole blocks.
           ============================================================
         -->
-
-        <article class="entry">
-          <div class="entry__grid">
-            <div>
-              <p class="entry__title"><span class="bib-tag">Working</span>Deep Reinforcement Learning for Integer-valued Action Spaces</p>
-              <p class="entry__authors">Haoyu Wu, Ayoub Foussoul, Ozan Candogan</p>
-              <p class="entry__meta">Deep Reinforcement Learning · Autoregression · Quadratic Programming</p>
-              <p style="color: var(--muted); font-size: 0.85rem;">Work in progress — happy to discuss by email.</p>
-            </div>
-            <div class="entry__abstract">
-              <span class="label">Abstract</span>
-              <p>
-                We are developing a deep reinforcement learning approach for
-                integer-valued action spaces that constructs each action sequentially,
-                rather than emitting it in a single one-shot decoder output.
-              </p>
-            </div>
-          </div>
-        </article>
 
         <article class="entry">
           <div class="entry__grid">
@@ -109,6 +104,51 @@
                 scheduling problem in the fluid limit, inspired by optimal transport
                 theory. The reformulation yields the optimal scheduling policy within a
                 general class of discipline scheduling policies over a finite horizon.
+              </p>
+
+              <div class="entry__talks">
+                <span class="label">Talks</span>
+                <ul class="talk-list">
+                  <li>
+                    <p class="talk__event"><span class="bib-tag">Upcoming</span>INFORMS Annual Meeting 2026, Session TE30</p>
+                    <p class="talk__meta">San Francisco, CA · Nov 2026</p>
+                  </li>
+                  <li>
+                    <p class="talk__event">MOPTA 2026 (Modeling and Optimization: Theory and Applications)</p>
+                    <p class="talk__meta">Lehigh University, Bethlehem, PA · Aug 2026</p>
+                  </li>
+                </ul>
+
+                <span class="label">Posters</span>
+                <ul class="talk-list">
+                  <li>
+                    <p class="talk__event">Stochastic Network Conference</p>
+                    <p class="talk__meta">Chicago, IL · Jun 2026</p>
+                  </li>
+                  <li>
+                    <p class="talk__event">Chicago Operations Workshop</p>
+                    <p class="talk__meta">Chicago, IL · Jun 2026</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="entry__grid">
+            <div>
+              <p class="entry__title"><span class="bib-tag">Working</span>Deep Reinforcement Learning for Integer-valued Action Spaces</p>
+              <p class="entry__authors">Haoyu Wu, Ayoub Foussoul, Ozan Candogan</p>
+              <p class="entry__meta">Deep Reinforcement Learning · Autoregression · Quadratic Programming</p>
+              <p style="color: var(--muted); font-size: 0.85rem;">Work in progress — happy to discuss by email.</p>
+            </div>
+            <div class="entry__abstract">
+              <span class="label">Abstract</span>
+              <p>
+                We are developing a deep reinforcement learning approach for
+                integer-valued action spaces that constructs each action sequentially,
+                rather than emitting it in a single one-shot decoder output.
               </p>
             </div>
           </div>

@@ -21,14 +21,16 @@ Edit a file, save, refresh the browser. That's the whole workflow.
 - `index.html` — Overview: title block, portrait, abstract, keywords, education, contact
 - `research.html` — Research: one flat list of projects, newest first. The ones
   that are published/submitted carry a small Journal / Conference / Working tag
-  in the title; there is no separate publications list.
+  in the title; there is no separate publications list. Talks and posters
+  about a paper are listed under that paper's abstract.
+- `notes.html` — Notes: a short personal page.
 - `css/style.css` — all styling, one file. CSS variables at the top control the
   palette, `--measure` controls the page width, and the `font-size` on `html`
   controls the overall text size.
 - `js/main.js` — progressive enhancement only (dark/light toggle, on-scroll
   masthead blur). The site is fully correct with this file blocked or deleted.
-- `js/visitors.js` — visitor counter + dot world-map at the bottom of the home
-  page, with a "Last 30 days / All time" toggle. Backed by a small Cloudflare
+- `js/visitors.js` — visitor counter + small dot world-map in the home-page
+  footer, with an "All time / Last 30 days" toggle. Backed by a small Cloudflare
   Worker (see `cloudflare-worker/README.md` for the one-time setup). Until
   `VISITOR_API` at the top of the file is set, the section stays hidden and
   nothing is recorded. Preview the map locally with `index.html?demo=1`.
@@ -38,11 +40,12 @@ Edit a file, save, refresh the browser. That's the whole workflow.
 - `images/` — portrait and favicon.
 
 There is no templating, so the header/footer markup is duplicated by hand across
-the two pages. If you add a third page, copy the header/footer from an existing
-page and add the nav link to *all* pages.
+the pages. If you add a page, copy the header/footer from an existing page and
+add the nav link to *all* pages.
 
-Both pages carry inline `HOW TO EDIT` comments explaining how to add a research
-entry, add an education line, and so on — read those first when editing.
+The pages carry inline `HOW TO EDIT` / `HOW TO ADD` comments explaining how to
+add a research entry, a talk, an education line, and so on — read those first
+when editing.
 
 ## Deploying
 
@@ -67,15 +70,8 @@ Old PDF URLs (e.g. `/files/SFS.pdf`) still resolve, so external links to papers
 keep working. Old *page* URLs from the Jekyll site (`/publications/`,
 `/portfolio/`, `/cv/`, `/talks/`) no longer exist.
 
-A `notes.html` page (hobbies / personal notes) was written but deactivated before
-launch. It is preserved in the local backup folder alongside the old site; to
-bring it back, restore the file and re-add its nav link to both pages (see the
-comment in the nav block).
-
 ## Things to fill in
 
-- Conference name for the elections paper, once confirmed (`research.html`,
-  marked with a dashed-underline placeholder).
 - Google Scholar / GitHub / LinkedIn links — commented-out block in `index.html`
   under Correspondence, and a second one at the top of `research.html`.
 - `files/CV.pdf` — replace whenever you update your CV.
