@@ -37,6 +37,10 @@ Edit a file, save, refresh the browser. That's the whole workflow.
 - `cloudflare-worker/` — the recording backend (worker + DB schema + setup
   guide). Not part of the published site.
 - `files/` — CV and paper/slide PDFs.
+- `files/shared/` — files shared by direct link only: each sits in a
+  random-named folder that no page links to, and `robots.txt` asks search
+  engines to skip the folder. The repo is public, so these are unlisted,
+  not secret. To stop sharing one, delete its folder.
 - `images/` — portrait and favicon.
 
 There is no templating, so the header/footer markup is duplicated by hand across
